@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.set{
+    background-image: url(pic4.jpg) ;
+    background-size: cover;
+    background-position: fixed;
+    background-position: bottom;
+}
+
+.row{
+    color: white;
+}
+h1{
+    font-size: 40px;
+  color: white;
+    margin-top:250px  ;
+ 
+}
+
+
+p{
+    font-size: 17px;
+    color: white;
+    /* font-family: 'Dancing Script', cursive; */
+}
+
+h3{
+    font-size: 25px;
+    color: white;
+}
+
+.col-md-5{
+  
+    box-shadow: -1px 1px 60px 10px black;
+    background: rgba(0,0,0,0.4);
+}
+
+
+.label-label{
+    font-weight: normal;
+    margin-top: 15px;
+    color: white;
+    font-size: 19px;
+}
+
+
+.control-set{
+    background-color: transparent;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    margin-top: 15px;
+    height: 40px;
+    color: white;
+}
+
+.btn-info{
+    margin-top: 20px;
+    font-size: 18px;
+    width: 120px;
+    margin-left: 80pxx;
+    margin-bottom: 20px;
+    background-color: white;
+    color: darkcyan;
+
+}

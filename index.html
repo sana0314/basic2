@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link rel="icon" href="favicon.jpg">
+
+  <link rel="stylesheet" href="style.css">
+  <title>GetEducation</title>
+</head>
+
+<body>
+  <!--carousal-->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators wrapper">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/slide4.jpg" alt="Error loading image" width="100%">
+        <div class="carousel-caption d-md-block">
+          <h2>CIT</h2>
+          <p>Certificate In Technology.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide5.jpg" alt="Error loading image" width="100%">
+        <div class="carousel-caption d-md-block">
+          <h2>Web Developemnt</h2>
+          <p>HTML, CSS, JavaScript</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide6.jpg" alt="Error loading image" width="100%">
+        <div class="carousel-caption d-md-block">
+          <h2>AI</h2>
+          <p>Artifical Intelligence</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div> 
+  <!--navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid wrapper">
+      <a class="navbar-brand" href="#">GetEducation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item active">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" target="_blank">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Free Courses
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="CIT.html">CIT</a></li>
+              <li><a class="dropdown-item" href="#">Web Developemnt</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">AI (Artifical Intelligence)</a></li>
+            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" method="get">
+          <input class="form-control me-2"  placeholder="Search" name="search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit" >Search</button>
+        </form>
+            <div class="mx-2">
+               <button class="btn btn-success margin"  data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+              <button class="btn btn-success margin"  data-bs-toggle="modal" data-bs-target="#SignupModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- login Modal -->
+ <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Please Login First</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sign up Modal -->
+  <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Create An Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--sidebar-->
+  <div class="main d-flex wrapper">
+    <div class="sidebar">
+      <div class="d-flex flex-column flex-shrink-0 p-3 bg-light sticky-top" style="width: 280px;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+          <span class="fs-4">Sidebar</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#home"></use>
+              </svg>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#speedometer2"></use>
+              </svg>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#table"></use>
+              </svg>
+              Orders
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#grid"></use>
+              </svg>
+              Products
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle"></use>
+              </svg>
+              Customers
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+            id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong><span class="badge rounded-pill bg-dark">Check Out</span></strong>
+          </a>
+          <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+            <li><a class="dropdown-item" href="Collapse&Accordion.html">Collapse</a></li>
+            <li><a class="dropdown-item" href="whatstrending.html">Whats's Trending</a></li>
+            <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="content wrapper">
+      <div class="card-group">
+        <div class="card">
+          <img src="pic1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CIT</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis, ullam, aut
+              labore modi cumque reiciendis ratione voluptatum quia eaque corporis, excepturi ut eligendi nobis aliquid
+              atque delectus natus esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem autem mollitia
+              repudiandae neque numquam consequuntur ab voluptas possimus veniam. Quae beatae quidem obcaecati, earum
+              iste suscipit accusantium placeat dolorem doloremque!</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="pic2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Web Developemnt</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus aperiam
+              blanditiis ab laborum quod iste quo quos, modi culpa recusandae minus cupiditate ipsam, non tempora saepe
+              hic est molestiae commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quia deleniti
+              facere fugiat totam ab, exercitationem a eaque impedit, odit ea facilis fuga eveniet dolor. Eum, ad. Vel,
+              aliquam optio?</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="pic3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">AI</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt provident repellendus
+              ullam natus pariatur saepe odio aspernatur unde quos? Minima quis corrupti labore magnam rem. Eligendi
+              vitae consequatur aliquam temporibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+              optio quibusdam voluptatum aut, dolorum pariatur sit nobis sed voluptate molestiae a doloribus ut ducimus
+              ab suscipit atque architecto magni explicabo.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <!--from-->
+      <div class="form mt-5">
+        <form action="submitted.html" method="get">
+          <div class="h1 text-center">Registration</div>
+          <div class="mb-3 ms-4">
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="">
+            </div>
+            <div class="mb-3">
+              <label for="secondName" class="form-label">Second Name</label>
+              <input type="text" class="form-control" id="secondName" name="secondName" placeholder="">
+            </div>
+            <select class="form-select" aria-label="Default select example mb-3">
+              <option selected>Select Your City</option>
+              <option value="1">Karachi</option>
+              <option value="2">Lahore</option>
+              <option value="3">Islamabad</option>
+            </select>
+            <label for="YourEmail" class="form-label mt-3">Email address</label>
+            <input type="email" class="form-control" id="YourEmail" aria-describedby="emailHelp" name="YourEmail">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3 ms-4">
+            <label for="YourPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="YourPassword" name="YourPassword">
+          </div>
+          <button type="submit" value="submit" class="btn btn-primary mb-3 ms-4 " >Submit</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

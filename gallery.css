@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
+}
+
+
+.gallery{
+    background-color: #dbddf1;
+    padding: 80px ;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.gallery img{
+    background-color: #ffffff;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3 );
+   cursor: pointer;
+}
+
+#img1:hover{
+    box-shadow: -1px 1px 60px 10px black;
+    background: rgba(0,0,0,0.4);
+}

@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
+}
+
+
+.position{
+    position: relative;
+    right: 57px;
+    z-index: 1;
+    background: white;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+
+.pposition{
+    position: relative;
+    left: 57px;
+    z-index: 1;
+    background: white;
+    border: 1px solid;
+    border-radius: 5px;
+
+    
+}
+
+
+
+
+
+
+    
